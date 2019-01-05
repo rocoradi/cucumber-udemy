@@ -1,4 +1,5 @@
 # language: pt
+@unitários
 Funcionalidade: Alugar filme
 	Como um usuário
 	Eu quero cadastrar aluguéis de filme
