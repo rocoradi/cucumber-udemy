@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/features/aprender_cucumber.feature", //camiho do arquivo de features
+		features = "src/test/resources/features/alugar_filme.feature", //camiho do arquivo de features
 		glue = "br.edu.rodrigocoradi.steps", //caminho para os passos
-		plugin = "pretty", //pra aparecer no console a descricao da historia 
+		plugin = {"pretty", "html:target/report-html", "json:target/report.json"}, //forma com que apareca o resultado - (pretty - pra aparecer no console a descricao da historia)
 		monochrome = true, //para remover os caracteres de formatacao
 		snippets = SnippetType.CAMELCASE, //para deixar os nomes dos metodos com CamelCase
 		dryRun = false, //validar se esta tudo correto com os metodos criados, ele nao era executar os testes, apenas validar
